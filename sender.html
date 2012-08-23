@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+
+<script src="js/lib/jquery-1.7.1.min.js"></script>
+<script>
+$(function(){
+	$('.asd').click(function(){
+		var forceX = 50;
+		var forceY = -17;
+		
+		$.ajax({
+			type: "GET",
+			url: 'process.php',
+			data: 'type=store&forceX='+forceX+'&forceY='+forceY,
+			success: function(response){
+				console.log(response);
+			
+			}		
+		});
+		
+	});
+
+});
+
+</script>
+</head>
+
+<body>
+
+	<div class="asd">Generate</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Bad Monkeys</title>
+
+<style>
+ #debugCanvas{display:none}
+ 
+	@font-face {
+	  font-family: 'Lemon';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Lemon Regular'), local('Lemon-Regular'), url('css/XGWCPn4vpJIX2zAFeIvA_Q.woff') format('woff');
+	}
+	
+ .container{
+	position:relative;
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+ .gameui{
+	font-family: 'Lemon', cursive;
+	font-size: 25px;
+	font-weight: 700;
+	display:none;
+	color: #F5CC02;
+	text-shadow: -2px 0 black, 0 -1px black, 4px 0 black, 0 4px black;
+ }
+ 
+.score {
+	position: absolute;
+	right: 5px;
+	top: 0;	
+	padding: 10px;
+	width: 100px;
+}
+
+.highscore {
+	position: absolute;
+	right: 135px;
+	top: 0.9px;
+	padding: 10px;
+	width: 100px;
+}
+
+.highscore span, .score span{
+	display: block;
+}
+
+.fruitcount {
+	top: 0;
+	left: 320px;
+	position: absolute;
+	padding: 10px;
+}
+
+.fruitcount img {
+	vertical-align: middle;
+}
+
+.dbug {
+	position: absolute;
+	top: 0;
+	left: -200px;
+	background: #DDD;
+	width: 200px;
+	height: 400px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.dbug_delete {
+	position: absolute;
+	font-family: 'Lemon', cursive;
+	top: 400px;
+	left: -200px;
+	width: 200px;
+	height: 200px;
+	background: #EEE;	
+	font-size: 20px;
+}
+
+.dbug_delete span{
+	font-family: sans-serif;
+	font-size: 10px;
+	display:block;
+	text-align:left;
+}
+
+.pause {
+	background: url(img/pause.png) no-repeat;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	height: 56px;
+	width: 55px;	
+}
+
+.pause.clicked {
+	background: url(img/pause.png) no-repeat right 0;	
+}
+
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+	<canvas id="easelCanvas" width="800" height="600"></canvas>
+	<canvas id="debugCanvas" width="1600" height="600"></canvas>	
+	<div class="loader">0</div>
+	<!-- <div class="dbug"></div> -->
+	<div class="dbug_delete"></div>
+	<div class="but">Inllalsd</div>
+	</div>
+	
+</body>
+<script src="js/lib/jquery-1.7.1.min.js"></script>
+<script src="js/lib/easel.js"></script>
+<script src="js/lib/Box2dWeb-2.1.a.3.min.js"></script>
+<script src="js/lib/easelBox.js"></script>
+<script src="js/lib/PxLoader.js"></script>
+<script src="js/lib/PxLoaderImage.js"></script>
+<script src="js/lib/PxLoaderSound.js"></script>
+<script src="js/lib/gain.js"></script>
+
+</html>
