@@ -3,7 +3,7 @@
 
 Bad Monkey is a canvas game, created and maintained by [jQuery Faisal](http://jquery404.com/about).
 
-To get started, checkout http://jquery404.com/lab/badmonkey !
+To get started, checkout http://jquery404.com/lab/badmonkeys !
 
 
 Blog
